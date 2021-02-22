@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Studanr data</title>
+        
+        <style>
+            
+        
+            
+            .tab-2{margin-left: 65px}
+            .tab-2 input
+            {
+                display: block;
+                margin-bottom: 10px
+            }
+            tr:hover
+            {
+                background-color:teal;
+                cursor: pointer
+            }
+            #add #edit #remove{
+                justify-content: center;
+                border-radius: 5rem;
+            }
+
+            .s{
+                top: 0%;
+                width:100%;
+                height: 155px;
+                
+
+            }
+          
+            h1{
+                text-align: center;
+                font-size: 35px;
+               
+            }
+            .title{
+                text-align: center;
+            }
+            .container{
+                width: auto;
+               text-align: center;
+            }
+            #tab{
+                margin-right: 2rem;
+                flex-wrap: wrap;
+
+            }
+            .tab{
+                border-radius: 3rem;
+                width:400PX;
+                background-color:#f8933b;
+                margin-left: 15%;
+                
+                text-align: center;
+            }
+            #sName, #SID, #GPA{
+                width: 300px;
+                height: 50px;
+                margin: 2rem;
+                border-radius: 2rem;
+                text-align: center;
+            }
+           
+        .person, .idicon, .avg{
+            display: flex ;
+            padding-left: 2rem;
+
+        }
+
+        .bi-calculator, .bi-sort-numeric-down-alt, .bi-person-bounding-box{
+            margin-top: 3rem;
+            
+        }
+
+        #add, #edit, #remove{
+            margin-inline-end: .25rem;
+            height: 40px;
+            text-align: center;
+            border-radius: 3rem;
+        }
+        #add:hover, #edit:hover, #remove:hover{
+            background-color: teal;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            height: 430px;
+            
+        }
+        .back{
+            justify-content: flex-end;
+
+        }
+        .tabl{
+            margin-left: 5rem;            
+            border-radius: 2rem;
+            padding: 2rem;
+        }
+        #table{
+            width: 350px;
+            padding: 2rem;
+            height: auto;
+            text-align: center;
+            border-radius: 1rem;
+            background-color: #f8933b;
+        }
+       
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="on">
+            
+        <img class="s" src="img/pregradapply-web-fpf.jpg" alt="">
+        <div class="title"><h1>Welcome</h1></div>
+
+        </div>
+
+        <img class="classes"  src="img/undraw_book_lover_mkck.png" alt="">
+        <div class="container">
+         
+            <div class="tab tab-2">
+                
+              <div class="person">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  </svg>
+
+                  <input type="text" name="sName" id="sName"  placeholder="Enter name..">
+              </div>
+
+              <div class="idicon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sort-numeric-down-alt" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.36 7.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.836 1.973-1.836 1.09 0 2.063.637 2.063 2.688 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98z"/>
+                    <path d="M12.438 8.668V14H11.39V9.684h-.051l-1.211.859v-.969l1.262-.906h1.046zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+                  </svg>
+
+                  <input type="text" name="SID" id="SID"  placeholder="Enter ID..">
+
+              </div>
+
+              <div class="avg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calculator" viewBox="0 0 16 16">
+                    <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                    <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/>
+                  </svg>
+
+                  <input type="number" name="GPA" id="GPA"  placeholder="Enter GPA..">
+
+
+              </div>
+                <div class="butt">
+                    
+                <button id="add" onclick="addRow();">Add <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z"/>
+                  </svg></button>
+                <button id="edit" onclick="editRow();">Edit  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg></button>
+                <button id="remove" onclick="removeRow();">Remove  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-x" viewBox="0 0 16 16">
+                    <path d="M.54 3.87L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zm6.339-1.577A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                    <path d="M11.854 10.146a.5.5 0 0 0-.708.708L12.293 12l-1.147 1.146a.5.5 0 0 0 .708.708L13 12.707l1.146 1.147a.5.5 0 0 0 .708-.708L13.707 12l1.147-1.146a.5.5 0 0 0-.708-.708L13 11.293l-1.146-1.147z"/>
+                  </svg></button>
+                </div>
+            </div>
+            <br><br><br><br>
+ <div class="tabl tab-1">
+                <h2 class="lable">Student List</h2>
+                <table id="table" border="4">
+                    
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>119</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>y</td>
+                        <td>118</td>
+                        <td>3.5</td>
+                    </tr>
+                
+                </table>
+            </div>
+           
+        </div>
+        
+        
+        <script>
+            
+            var Index,
+                table = document.getElementById("table");
+            
+            // check the empty input
+            function checkEmpty()
+            {
+                var isEmpty = false,
+                    sName = document.getElementById("sName").value,
+                    SID = document.getElementById("SID").value,
+                    GPA = document.getElementById("GPA").value;
+            
+                if(sName === ""){
+                    alert("Student Name Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(SID === ""){
+                    alert("Student ID Connot Be Empty");
+                    isEmpty = true;
+                }
+                else if(GPA === ""){
+                    alert("GPA Connot Be Empty");
+                    isEmpty = true;
+                }
+                return isEmpty;
+            }
+            
+                // add Row
+                // get the table by id
+                // create a new row and cells
+                // get value from input text
+                // set the values into row cell's
+            function addRow()
+            {
+                
+                if(!checkEmpty()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+                    sName = document.getElementById("sName").value,
+                    SID = document.getElementById("SID").value,
+                    GPA = document.getElementById("GPA").value;
+            
+                cell1.innerHTML = sName;
+                cell2.innerHTML = SID;
+                cell3.innerHTML = GPA;
+                
+                selectRowToInput();   //  to set the event to the new row
+            }
+            }
+            
+            // display selected row data into input text
+            function selectRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                  
+                      rIndex = this.rowIndex;
+                      document.getElementById("sName").value = this.cells[0].innerHTML;
+                      document.getElementById("SID").value = this.cells[1].innerHTML;
+                      document.getElementById("GPA").value = this.cells[2].innerHTML;
+                    };
+                }
+            }
+            selectRowToInput();
+            
+            function editRow()
+            {
+                var sName = document.getElementById("sName").value,
+                    SID = document.getElementById("SID").value,
+                    GPA = document.getElementById("GPA").value;
+               if(!checkEmpty()){
+                table.rows[rIndex].cells[0].innerHTML = sName;
+                table.rows[rIndex].cells[1].innerHTML = SID;
+                table.rows[rIndex].cells[2].innerHTML = GPA;
+              }
+            }
+            
+            function removeRow()
+            {
+                table.deleteRow(rIndex);
+               
+                document.getElementById("sName").value = "";
+                document.getElementById("SID").value = "";
+                document.getElementById("GPA").value = "";
+            }
+        </script>
+        
+    </body>
+</html>
